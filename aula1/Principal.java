@@ -19,7 +19,7 @@ public class Principal {
         menorNumero = vetor[i];
       }
 
-      if (vetor[i] > maiorNumero) {
+      if ((vetor[i] > maiorNumero) || (i == 0)) {
         maiorNumero = vetor[i];
       }
 
@@ -32,7 +32,11 @@ public class Principal {
     String mensagem = String.format("Maior: %f\n"
         + "Menor: %f\n"
         + "Média: %f\n"
-        + "Vetor: %s\n", maiorNumero, menorNumero, media, vetorEmTexto);
+        + "Vetor: %s\n",
+        maiorNumero,
+        menorNumero,
+        media,
+        vetorEmTexto);
 
     JOptionPane.showMessageDialog(null, mensagem);
   }
