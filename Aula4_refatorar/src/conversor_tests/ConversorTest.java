@@ -1,6 +1,9 @@
+package conversor_tests;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Test;
+
+import conversor.Conversor;
 
 public class ConversorTest {
   @Test
